@@ -213,6 +213,36 @@ section { padding: 48px 0 64px; }
   font-weight: 500;
 }
 
+/* ---------- Publications ---------- */
+.pub-list { margin-top: 20px; }
+
+.pub-row {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.pub-row:first-child { border-top: 1px solid var(--hairline); }
+
+.pub-venue {
+  flex: 0 0 130px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.pub-role { font-size: 15px; color: var(--ink); }
+
+/* ---------- Honors line ---------- */
+.honors-line {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.honors-line strong { color: var(--ink-soft); font-weight: 600; }
+
 /* ---------- Experience ---------- */
 .exp-row {
   display: flex;
@@ -284,6 +314,7 @@ section { padding: 48px 0 64px; }
   .area-desc { flex-basis: 100%; }
 
   .exp-row { flex-direction: column; gap: 8px; }
+  .pub-row { flex-direction: column; gap: 4px; }
 
   .about-inner { flex-direction: column-reverse; }
   .about-avatar { flex-basis: auto; }

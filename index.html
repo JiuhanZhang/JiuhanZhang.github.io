@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jiuhan Zhang — Robotics Engineering, Hunan University</title>
-  <meta name="description" content="Jiuhan Zhang — Robotics Engineering undergraduate at Hunan University. Assistive technology for the visually impaired: 360° fisheye perception, lightweight segmentation & depth, embedded deployment, haptic feedback. Founder of Libereye." />
+  <meta name="description" content="Jiuhan Zhang (张久涵) — Robotics Engineering undergraduate at Hunan University, Ph.D. applicant (Fall 2028). Computer vision for accessibility, fisheye perception, wearable assistive navigation, edge AI deployment. Founder of Libereye." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
       <a href="#" class="site-name">JIUHAN ZHANG</a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#" class="active">Home</a>
-        <a href="#work">Publications</a>
+        <a href="#publications">Publications</a>
         <a href="#areas">Research</a>
         <a href="#work">Projects</a>
         <a href="#" title="Add your CV PDF link">CV</a>
@@ -31,21 +31,21 @@
     <!-- ============ Hero ============ -->
     <section class="hero">
       <div class="container">
-        <p class="greeting">Hello, I'm Jiuhan Zhang.</p>
-        <h1 class="headline">Building assistive vision<br />for the visually impaired.</h1>
+        <p class="greeting">Hello, I'm Jiuhan Zhang (张久涵).</p>
+        <h1 class="headline">Turning 360° perception<br />into a wearable sense<br />for the blind.</h1>
         <p class="intro">
-          I study Robotics Engineering (Xiangjiang Science and Technology Experimental Class)
-          at Hunan University. My work spans 360° fisheye perception, lightweight segmentation
-          and depth estimation, embedded deployment on Raspberry Pi, and haptic feedback —
-          turning research into navigation aids people can actually wear.
+          I'm an undergraduate in Robotics Engineering at Hunan University (Xiangjiang Science &amp;
+          Innovation Pilot Class), applying for Ph.D. admission in Fall 2028. My work turns fisheye
+          vision, depth estimation and multimodal VLMs into assistive navigation systems that run
+          fully on-device — five papers are currently under review at ICRA, AAAI and ICASSP 2027.
         </p>
         <div class="meta-row">
           <span class="meta-label">Current</span>
-          <span class="meta-value">Founder &amp; Engineer · Libereye (AR glasses for visually impaired)</span>
+          <span class="meta-value">Research Lead · National Undergraduate Innovation Program (Key Project); Founder, Libereye</span>
         </div>
         <div class="meta-row">
           <span class="meta-label">Focus</span>
-          <span class="meta-value">Assistive Technology · Computer Vision · BCI · Edge AI · VLM</span>
+          <span class="meta-value">Computer Vision · Multimodal Perception · HCI · Wearable Assistive Navigation · Edge AI</span>
         </div>
       </div>
     </section>
@@ -54,30 +54,30 @@
     <section class="areas" id="areas">
       <div class="container">
         <p class="caption">Main Activity Areas</p>
-        <p class="section-sub">Research · Robotics · Entrepreneurship</p>
+        <p class="section-sub">Perception · Wearables · Deployment</p>
 
         <div class="area-row">
           <span class="area-num">01</span>
-          <h2 class="area-title">Research</h2>
+          <h2 class="area-title">Computer Vision for Accessibility</h2>
           <p class="area-desc">
-            Assistive navigation systems — 360° fisheye segmentation (YOLO11n-seg), fisheye
-            depth estimation (DFDNet) and self-calibration. Two papers under review at ICRA 2027.
+            Fisheye segmentation with self-calibration via straight-line invariance —
+            YOLO11n-seg reaches box mAP50 = 0.7441 on FishEye8K with only 2.84M parameters.
           </p>
         </div>
         <div class="area-row">
           <span class="area-num">02</span>
-          <h2 class="area-title">Robotics &amp; Embedded</h2>
+          <h2 class="area-title">Wearable Assistive Navigation</h2>
           <p class="area-desc">
-            Edge deployment on Raspberry Pi 5 (NCNN INT8), ESP32-S3 firmware, BLE haptic
-            wristband protocol, and integration of fisheye cameras, IMU and TOF sensors.
+            Dual-fisheye 185° perception, 12-channel haptic belts, VLM planning,
+            bone-conduction audio and 5-level wrist haptics — coordinated by event priority.
           </p>
         </div>
         <div class="area-row">
           <span class="area-num">03</span>
-          <h2 class="area-title">Entrepreneurship</h2>
+          <h2 class="area-title">Edge AI Deployment</h2>
           <p class="area-desc">
-            Founder of Libereye — AR-glasses turn-by-turn navigation fusing VLM vision,
-            TOF ranging and wrist haptics for blind users. Seed-funded, featured by local TV media.
+            ONNX → NCNN INT8 pipeline on Raspberry Pi 5: 3.03 MB model (3.8× compression),
+            fully offline so users' camera frames never leave the device.
           </p>
         </div>
       </div>
@@ -91,46 +91,79 @@
 
         <div class="card-grid">
           <article class="card">
-            <p class="card-tag">Robotics · CV</p>
-            <h3 class="card-title">360° Fisheye Guiding Waistband</h3>
+            <p class="card-tag">Research · CV</p>
+            <h3 class="card-title">Fisheye Perception Pipeline</h3>
             <p class="card-desc">
-              A vision-impairment guiding waistband equipped with a 360° fisheye panoramic
-              camera. Achieves full-surround environmental perception and delivers obstacle
-              warnings via haptic vibration feedback.
+              Self-calibration via straight-line invariance with a field-preserving polynomial
+              f(r) = r + k₁r³ − k₁r⁵. YOLO11n-seg reaches box mAP50 = 0.7441 on FishEye8K
+              at 2.84M parameters.
             </p>
-            <a class="card-link" href="#" aria-label="View project: 360 Fisheye Guiding Waistband">View project →</a>
+            <a class="card-link" href="#" aria-label="View project: Fisheye Perception Pipeline">View project →</a>
           </article>
 
           <article class="card">
-            <p class="card-tag">Research · Embedded</p>
-            <h3 class="card-title">OmniBelt — Assistive Navigation Belt</h3>
+            <p class="card-tag">Research · Depth</p>
+            <h3 class="card-title">Radius-aware Fisheye Depth (DFDNet)</h3>
             <p class="card-desc">
-              Raspberry Pi 5 belt with 12 vibration motors. Fast loop runs YOLO11n-seg
-              segmentation, slow loop queries a VLM, mapping 12 sectors of haptic feedback
-              for real-time guidance.
+              A radial-dependent point spread function for fisheye depth: outer-ring RMSE 0.0449
+              vs. Gaussian baseline 0.0756 (~41% better); JPEG+vignette augmentation cut
+              validation RMSE from 0.1425 to 0.0738.
+            </p>
+            <a class="card-link" href="#" aria-label="View project: Radius-aware Fisheye Depth Estimation">View project →</a>
+          </article>
+
+          <article class="card">
+            <p class="card-tag">Robotics · Haptics</p>
+            <h3 class="card-title">OmniBelt — Dual-Fisheye Vibration Belt</h3>
+            <p class="card-desc">
+              185° dual-fisheye perception on Raspberry Pi 5 driving a 12-channel haptic belt.
+              The fast loop runs segmentation, the slow loop queries a VLM — both mapped onto
+              12 vibration sectors.
             </p>
             <a class="card-link" href="#" aria-label="View project: OmniBelt">View project →</a>
           </article>
 
           <article class="card">
-            <p class="card-tag">Startup · AR</p>
-            <h3 class="card-title">Libereye — AR Glasses Navigation</h3>
+            <p class="card-tag">Startup · Product</p>
+            <h3 class="card-title">Libereye — Assistive Navigation Eyewear</h3>
             <p class="card-desc">
-              Turn-by-turn navigation for blind users fusing VLM vision, TOF ranging and a
-              BLE haptic wristband. Reverse-engineered wearable protocol; deployed on uni-app Vue3.
+              Dual GPS + IMU / visual / TOF fusion for seamless indoor-outdoor localization,
+              with bone-conduction audio and 5-level wrist haptics. Fully offline, so camera
+              frames never leave the device.
             </p>
             <a class="card-link" href="#" aria-label="View project: Libereye">View project →</a>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="card">
-            <p class="card-tag">Research · Depth</p>
-            <h3 class="card-title">Radius-aware Fisheye Depth Estimation</h3>
-            <p class="card-desc">
-              A lightweight 836K-parameter U-Net with radius-aware fisheye PSF, improving
-              outer-ring RMSE by ~41%. INT8 model compressed to 3.03 MB for on-device inference.
-            </p>
-            <a class="card-link" href="#" aria-label="View project: Radius-aware Fisheye Depth Estimation">View project →</a>
-          </article>
+    <!-- ============ Publications ============ -->
+    <section class="publications" id="publications">
+      <div class="container">
+        <p class="caption">Publications</p>
+        <h2 class="section-title">5 papers under review · titles withheld during review</h2>
+
+        <div class="pub-list">
+          <div class="pub-row">
+            <span class="pub-venue">ICRA 2027</span>
+            <span class="pub-role">Co-first Author · Under review</span>
+          </div>
+          <div class="pub-row">
+            <span class="pub-venue">ICRA 2027</span>
+            <span class="pub-role">Second Author · Under review</span>
+          </div>
+          <div class="pub-row">
+            <span class="pub-venue">AAAI 2027</span>
+            <span class="pub-role">Second Author · AI for Social Impact Track · Under review</span>
+          </div>
+          <div class="pub-row">
+            <span class="pub-venue">ICASSP 2027</span>
+            <span class="pub-role">Second Author · Under review</span>
+          </div>
+          <div class="pub-row">
+            <span class="pub-venue">ICASSP 2027</span>
+            <span class="pub-role">Third Author · Under review</span>
+          </div>
         </div>
       </div>
     </section>
@@ -142,36 +175,39 @@
         <h2 class="section-title">Experience</h2>
 
         <div class="exp-row">
-          <span class="exp-years">2025 — Present</span>
+          <span class="exp-years">2025.11 — Present</span>
           <div class="exp-body">
-            <h3 class="exp-role">Founder &amp; Engineer</h3>
-            <p class="exp-org">Libereye (知境)</p>
+            <h3 class="exp-role">Research Lead (Principal Investigator)</h3>
+            <p class="exp-org">National Undergraduate Innovation Training Program — Key Project, Hunan University</p>
             <p class="exp-desc">
-              Building AR-glasses turn-by-turn navigation for the visually impaired —
-              VLM vision, TOF ranging and BLE wrist haptics in one loop.
+              Multimodal assistive navigation: dual GPS + IMU / visual / TOF fusion, MobileNetV2
+              detection with DFDNet depth, Qwen2-VL deployed via NCNN INT8, bone-conduction audio
+              plus 5-level wrist haptics. Two invention patents in preparation.
             </p>
           </div>
         </div>
 
         <div class="exp-row">
-          <span class="exp-years">2025 — Present</span>
+          <span class="exp-years">2024 — Present</span>
           <div class="exp-body">
-            <h3 class="exp-role">Independent Researcher</h3>
-            <p class="exp-org">ICRA 2027 submissions</p>
+            <h3 class="exp-role">Founder &amp; Technical Lead</h3>
+            <p class="exp-org">Libereye Technology (知境科技)</p>
             <p class="exp-desc">
-              360° fisheye perception and lightweight segmentation/depth for assistive
-              navigation — co-first author and second author papers under review.
+              Assistive eyewear for blind users — hardware design, AI algorithms and product
+              delivery end to end. Selected into Liuzhi Action Batch 54; 500K CNY angel
+              investment; covered by Changsha TV news.
             </p>
           </div>
         </div>
 
         <div class="exp-row">
-          <span class="exp-years">2024 — 2028 (exp.)</span>
+          <span class="exp-years">2024.09 — 2028.06 (exp.)</span>
           <div class="exp-body">
-            <h3 class="exp-role">B.Eng. in Robotics Engineering</h3>
-            <p class="exp-org">Hunan University · Xiangjiang Experimental Class</p>
+            <h3 class="exp-role">B.E. in Robotics Engineering</h3>
+            <p class="exp-org">Hunan University · Xiangjiang Science &amp; Innovation Pilot Class (985 / Double First-Class)</p>
             <p class="exp-desc">
-              Robotics, computer vision and embedded systems. Applying for Ph.D. positions (Fall 2028).
+              GPA 3.4/4.0 · Average 86.5/100 · Rank 12/31 (Pilot Class) · CET-4 / CET-6.
+              Applying for Ph.D. admission in Fall 2028.
             </p>
           </div>
         </div>
@@ -186,26 +222,32 @@
 
         <div class="card-grid">
           <article class="card award">
-            <p class="card-tag">Provincial</p>
-            <h3 class="card-title">First Prize — Hunan IoT Competition</h3>
-            <p class="card-desc">Provincial-level award for an embedded assistive system.</p>
+            <p class="card-tag">Competition</p>
+            <h3 class="card-title">1st Prize — National College IoT Design Competition</h3>
+            <p class="card-desc">Central &amp; Southwest China regional division, 2026.</p>
           </article>
           <article class="card award">
             <p class="card-tag">National</p>
-            <h3 class="card-title">National Top 15 — CSDN XBuilder</h3>
-            <p class="card-desc">Top-15 finish in a national AI application development contest.</p>
-          </article>
-          <article class="card award">
-            <p class="card-tag">Competition</p>
-            <h3 class="card-title">Second Prize — Golden Seed Cup</h3>
-            <p class="card-desc">National innovation &amp; entrepreneurship competition award.</p>
+            <h3 class="card-title">Top 15 — CSDN XBuilder Smart Hardware Innovation</h3>
+            <p class="card-desc">National smart-hardware innovation competition, 2026.</p>
           </article>
           <article class="card award">
             <p class="card-tag">Startup</p>
-            <h3 class="card-title">RMB 500K Seed Funding — Libereye</h3>
-            <p class="card-desc">Selected into Liuzhi Action (Batch 54); featured by Changsha TV.</p>
+            <h3 class="card-title">Runner-up — Golden Seed Cup, Hunan University</h3>
+            <p class="card-desc">Modern Agriculture &amp; Health track, 2026.</p>
+          </article>
+          <article class="card award">
+            <p class="card-tag">Startup</p>
+            <h3 class="card-title">3rd Prize — Challenge Cup Business Plan Competition</h3>
+            <p class="card-desc">University-level entrepreneurship competition, 2026.</p>
           </article>
         </div>
+
+        <p class="honors-line">
+          <strong>Honors &amp; Service:</strong>
+          Shandong Province Outstanding Student · Outstanding Youth League Cadre (HNU) ·
+          Physical Fitness Excellence Award · Volunteer, Chinese Control Conference 2026
+        </p>
       </div>
     </section>
 
@@ -216,23 +258,24 @@
           <p class="caption">Profile</p>
           <h2 class="section-title">About</h2>
           <p class="about-para">
-            My work sits between computer vision, embedded systems and assistive technology.
-            I care about one question: how can 360° perception become a sense that blind users
-            can trust? That question drives my research papers, my startup, and the prototypes
-            I build at 2 a.m.
+            I build assistive technology end to end — from fisheye optics and model quantization
+            up to the vibration a blind user feels on their wrist. My work spans five papers under
+            review, a national-level research project, and a startup shipping eyewear for the
+            visually impaired. I'm looking for a Ph.D. position (Fall 2028) where perception
+            research meets real users.
           </p>
           <div class="about-meta">
             <div class="meta-row">
               <span class="meta-label">Education</span>
-              <span class="meta-value">Hunan University · Robotics Engineering</span>
+              <span class="meta-value">Hunan University · Robotics Engineering · GPA 3.4/4.0 · Rank 12/31</span>
             </div>
             <div class="meta-row">
               <span class="meta-label">Build with</span>
-              <span class="meta-value">PyTorch · ONNX/NCNN · ESP32 · Raspberry Pi · Vue3</span>
+              <span class="meta-value">PyTorch · YOLO · ONNX / NCNN INT8 · Raspberry Pi 5 · STM32 · ROS2 · KiCad · LaTeX</span>
             </div>
             <div class="meta-row">
-              <span class="meta-label">Interests</span>
-              <span class="meta-value">Assistive Tech · Fisheye Perception · BCI · VLM · Tactile Interfaces</span>
+              <span class="meta-label">Research</span>
+              <span class="meta-value">Computer Vision · Multimodal Perception · HCI · Wearable Assistive Navigation · Edge AI</span>
             </div>
           </div>
         </div>
@@ -246,7 +289,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>Jiuhan Zhang · 2026</span>
-      <span><a href="mailto:1429401071@qq.com">1429401071@qq.com</a> · <a href="https://github.com/JiuhanZhang" target="_blank" rel="noopener">github.com/JiuhanZhang</a></span>
+      <span><a href="mailto:jiuhang@hnu.edu.cn">jiuhang@hnu.edu.cn</a> · <a href="https://github.com/JiuhanZhang" target="_blank" rel="noopener">github.com/JiuhanZhang</a></span>
     </div>
   </footer>
 
